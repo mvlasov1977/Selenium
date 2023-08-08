@@ -4,15 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e96766da-b415-47c2-b694-a81475b9fdc5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/WaitersUtil.java" afterDir="false" />
+    <list default="true" id="e96766da-b415-47c2-b694-a81475b9fdc5" name="Changes" comment="environments were created">
+      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/BaseTestClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/CartProductComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/CartProductsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/MenuPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/ProductComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/ProductItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/ProductsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/TestDataClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/TestsClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/WaitersUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/WaitersUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +58,96 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.TestsClass">
+    <configuration name="TestsClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.TestsClass" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsClass.verifyLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.TestsClass" />
+      <option name="METHOD_NAME" value="verifyLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsClass.verifyLogoutCartPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.TestsClass" />
+      <option name="METHOD_NAME" value="verifyLogoutCartPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsClass.verifyLogoutMainPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.TestsClass" />
+      <option name="METHOD_NAME" value="verifyLogoutMainPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsClass.verifySelectedProductsShowedInCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.TestsClass" />
+      <option name="METHOD_NAME" value="verifySelectedProductsShowedInCart" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestsClass" />
+        <item itemvalue="JUnit.TestsClass.verifyLogoutCartPage" />
+        <item itemvalue="JUnit.TestsClass.verifySelectedProductsShowedInCart" />
+        <item itemvalue="JUnit.TestsClass.verifyLogin" />
+        <item itemvalue="JUnit.TestsClass.verifyLogoutMainPage" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,6 +157,18 @@
       <option name="presentableId" value="Default" />
       <updated>1690099413553</updated>
     </task>
+    <task id="LOCAL-00001" summary="environments were created">
+      <created>1690101477665</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690101477666</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="environments were created" />
+    <option name="LAST_COMMIT_MESSAGE" value="environments were created" />
   </component>
 </project>
