@@ -13,6 +13,7 @@ public class CartProductComponent {
 
     public CartProductComponent(WebElement parentElement, int buttonIndex) {
         this.parentElement = parentElement;
+        this.buttonIndex = buttonIndex;
     }
     private String extractCurrencyFromPrice(String price){
         return price.substring(0,1);

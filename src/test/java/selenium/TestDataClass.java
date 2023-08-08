@@ -3,7 +3,6 @@ package selenium;
 import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 
 public class TestDataClass {
@@ -17,9 +16,6 @@ public class TestDataClass {
         myProductItems.add(new ProductItem("Sauce Labs Fleece Jacket",49.99, "$"));
         myProductItems.add(new ProductItem("Sauce Labs Onesie",7.99, "$"));
         myProductItems.add(new ProductItem("Sauce Labs Bolt T-Shirt",15.99,"$"));
-    }
-    public int getTestDataCount(){
-        return myProductItems.size();
     }
     public void sortByPriceThenName(ArrayList<ProductItem> inputArray){
         Comparator<ProductItem> comparator = Comparator.comparing(ProductItem::getPrice)

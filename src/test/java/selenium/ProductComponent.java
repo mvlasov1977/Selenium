@@ -39,9 +39,7 @@ public class ProductComponent {
     public boolean isProductButtonSelected(){
         if ( parentElement.findElement(productItemButton)
                 .getAttribute("data-test")
-                .equals("remove-sauce-labs-backpack") ){
-            return true;
-        }
+                .contains("remove")){return true;}
         return false;
     }
 }
