@@ -4,7 +4,15 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
+
+import static org.slf4j.MDC.put;
 
 public class TestsClass {
     private final Double myLimitSelectPrice = 10.0;
@@ -19,15 +27,40 @@ public class TestsClass {
                 .enterPassword(password)
                 .clickOnLoginButton();
     }
-    private WebDriver initDriver(String myUrl){
-        WebDriver chromeDriver = new ChromeDriver();
+    private WebDriver initDriver(String myUrl) throws MalformedURLException {
+        //WebDriver chromeDriver = new ChromeDriver();
+
+        ChromeOptions options = new ChromeOptions();
+        options.setCapability("browserVersion", "114.0");
+        options.setCapability("selenoid:options", new HashMap<String, Object>() {{
+            /* How to add test badge */
+            put("name", "Test badge...");
+
+            /* How to set session timeout */
+            put("sessionTimeout", "15m");
+
+            /* How to set timezone */
+            put("env", new ArrayList<String>() {{
+                add("TZ=UTC");
+            }});
+
+            /* How to add "trash" button */
+            put("labels", new HashMap<String, Object>() {{
+                put("manual", "true");
+            }});
+
+            /* How to enable video recording */
+            put("enableVideo", true);
+        }});
+        RemoteWebDriver chromeDriver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+
         chromeDriver.manage().deleteAllCookies();
         chromeDriver.manage().window().maximize();
         chromeDriver.get(myUrl);
         return chromeDriver;
     }
     @Test
-    public void verifyLogin(){
+    public void verifyLogin() throws MalformedURLException {
         MainPage myMainPage = loggingIn(initDriver(myStartPageUrl), myUsername, myPassword);
 
         Assertions.assertTrue(myMainPage.isPageSuccess());
@@ -35,7 +68,7 @@ public class TestsClass {
         myMainPage.clearDriver();
     }
     @Test
-    public void verifyLogoutMainPage(){
+    public void verifyLogoutMainPage() throws MalformedURLException {
         MainPage myMainPage = loggingIn(initDriver(myStartPageUrl), myUsername, myPassword);
 
         boolean logoutIsSuccess = myMainPage
@@ -49,7 +82,7 @@ public class TestsClass {
         myMainPage.clearDriver();
     }
     @Test
-    public void verifyLogoutCartPage(){
+    public void verifyLogoutCartPage() throws MalformedURLException {
         MainPage myMainPage = loggingIn(initDriver(myStartPageUrl), myUsername, myPassword);
         myMainPage.getDriver().get(myCartPageUrl);
         CartPage myCartPage = new CartPage(myMainPage.getDriver());
@@ -65,7 +98,7 @@ public class TestsClass {
         myCartPage.clearDriver();
     }
     @Test
-    public void verifyAllProductsShowed(){
+    public void verifyAllProductsShowed() throws MalformedURLException {
         MainPage myMainPage = loggingIn(initDriver(myStartPageUrl), myUsername, myPassword);
         ProductsPage myProductPage = new ProductsPage(myMainPage.getDriver());
 
@@ -80,7 +113,7 @@ public class TestsClass {
         myProductPage.clearDriver();
     }
     @Test
-    public void verifyAllProductsSortedByPrice(){
+    public void verifyAllProductsSortedByPrice() throws MalformedURLException {
         MainPage myMainPage = loggingIn(initDriver(myStartPageUrl), myUsername, myPassword);
         myMainPage.clickOnPageSortContainer();
         ProductsPage myProductPage = new ProductsPage(myMainPage.getDriver());
@@ -96,7 +129,7 @@ public class TestsClass {
         myProductPage.clearDriver();
     }
     @Test
-    public void verifySelectedProductsShowedInCart(){
+    public void verifySelectedProductsShowedInCart() throws MalformedURLException {
         MainPage myMainPage = loggingIn(initDriver(myStartPageUrl), myUsername, myPassword);
         ProductsPage myProductPage = new ProductsPage(myMainPage.getDriver());
 

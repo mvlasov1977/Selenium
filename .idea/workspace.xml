@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e96766da-b415-47c2-b694-a81475b9fdc5" name="Changes" comment="code was wrote (it needs refactoring)">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
+    <list default="true" id="e96766da-b415-47c2-b694-a81475b9fdc5" name="Changes" comment="multi-threads was added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/CartProductComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/CartProductComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/ProductComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/ProductComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/TestDataClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/TestDataClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/selenium/TestsClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/TestsClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,16 +39,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Install\QAAuto\Projects\15\Selenium\src\test\resources" />
+    </key>
+  </component>
   <component name="RunManager" selected="JUnit.TestsClass">
     <configuration name="TestsClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium" />
@@ -167,12 +167,20 @@
       <option name="project" value="LOCAL" />
       <updated>1691466533458</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="multi-threads was added">
+      <created>1691519754568</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691519754568</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="environments were created" />
     <MESSAGE value="code was wrote (it needs refactoring)" />
-    <option name="LAST_COMMIT_MESSAGE" value="code was wrote (it needs refactoring)" />
+    <MESSAGE value="multi-threads was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="multi-threads was added" />
   </component>
 </project>
