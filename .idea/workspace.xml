@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e96766da-b415-47c2-b694-a81475b9fdc5" name="Changes" comment="selenoid Chrome Option was added">
+    <list default="true" id="e96766da-b415-47c2-b694-a81475b9fdc5" name="Changes" comment="selenoid Firefox Option was added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/SelenoidOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/SelenoidOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/TestsClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/TestsClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,7 @@
       <recent name="C:\Install\QAAuto\Projects\15\Selenium\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestsClass.verifyLogin">
+  <component name="RunManager" selected="JUnit.TestsClass">
     <configuration name="TestsClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium" />
       <extension name="coverage">
@@ -137,8 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestsClass.verifyLogin" />
         <item itemvalue="JUnit.TestsClass" />
+        <item itemvalue="JUnit.TestsClass.verifyLogin" />
         <item itemvalue="JUnit.TestsClass.verifyAllProductsShowed" />
         <item itemvalue="JUnit.TestsClass.verifyLogoutCartPage" />
         <item itemvalue="JUnit.TestsClass.verifySelectedProductsShowedInCart" />
@@ -203,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691646199175</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="selenoid Firefox Option was added">
+      <created>1691646788031</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691646788031</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +230,7 @@
     <MESSAGE value="change to &quot;enableVNC&quot; option" />
     <MESSAGE value="set 2 concurrent sessions" />
     <MESSAGE value="selenoid Chrome Option was added" />
-    <option name="LAST_COMMIT_MESSAGE" value="selenoid Chrome Option was added" />
+    <MESSAGE value="selenoid Firefox Option was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="selenoid Firefox Option was added" />
   </component>
 </project>
