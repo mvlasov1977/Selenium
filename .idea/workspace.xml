@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e96766da-b415-47c2-b694-a81475b9fdc5" name="Changes" comment="change to &quot;enableVNC&quot; option">
+    <list default="true" id="e96766da-b415-47c2-b694-a81475b9fdc5" name="Changes" comment="set 2 concurrent sessions">
+      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/SelenoidOptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/TestsClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/TestsClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
       <recent name="C:\Install\QAAuto\Projects\15\Selenium\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestsClass">
+  <component name="RunManager" selected="JUnit.TestsClass.verifyLogin">
     <configuration name="TestsClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium" />
       <extension name="coverage">
@@ -136,8 +137,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestsClass" />
         <item itemvalue="JUnit.TestsClass.verifyLogin" />
+        <item itemvalue="JUnit.TestsClass" />
         <item itemvalue="JUnit.TestsClass.verifyAllProductsShowed" />
         <item itemvalue="JUnit.TestsClass.verifyLogoutCartPage" />
         <item itemvalue="JUnit.TestsClass.verifySelectedProductsShowedInCart" />
@@ -188,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691640409347</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="set 2 concurrent sessions">
+      <created>1691641136843</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691641136843</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +216,7 @@
     <MESSAGE value="multi-threads was added" />
     <MESSAGE value="selenoid configuration was added" />
     <MESSAGE value="change to &quot;enableVNC&quot; option" />
-    <option name="LAST_COMMIT_MESSAGE" value="change to &quot;enableVNC&quot; option" />
+    <MESSAGE value="set 2 concurrent sessions" />
+    <option name="LAST_COMMIT_MESSAGE" value="set 2 concurrent sessions" />
   </component>
 </project>

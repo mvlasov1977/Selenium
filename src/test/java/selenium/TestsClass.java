@@ -12,8 +12,6 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import static org.slf4j.MDC.put;
-
 public class TestsClass {
     private final Double myLimitSelectPrice = 10.0;
     private final String myStartPageUrl = "https://www.saucedemo.com/";
@@ -29,35 +27,14 @@ public class TestsClass {
     }
     private WebDriver initDriver(String myUrl) throws MalformedURLException {
         //WebDriver chromeDriver = new ChromeDriver();
+        SelenoidOptions mySelenoidOptions = new SelenoidOptions(myStartPageUrl
+                , "1m", "TZ=UTC", "true", "enableVNC");
 
-        ChromeOptions options = new ChromeOptions();
-        options.setCapability("browserVersion", "114.0");
-        options.setCapability("selenoid:options", new HashMap<String, Object>() {{
-            /* How to add test badge */
-            put("name", "Test badge...");
-
-            /* How to set session timeout */
-            put("sessionTimeout", "15m");
-
-            /* How to set timezone */
-            put("env", new ArrayList<String>() {{
-                add("TZ=UTC");
-            }});
-
-            /* How to add "trash" button */
-            put("labels", new HashMap<String, Object>() {{
-                put("manual", "true");
-            }});
-
-            /* How to enable video recording */
-            put("enableVNC", true);
-        }});
-        RemoteWebDriver chromeDriver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
-
-        chromeDriver.manage().deleteAllCookies();
-        chromeDriver.manage().window().maximize();
-        chromeDriver.get(myUrl);
-        return chromeDriver;
+        WebDriver wwwDriver = mySelenoidOptions.getChromeDriver("114.0", "http://localhost:4444/wd/hub");
+        wwwDriver.manage().deleteAllCookies();
+        wwwDriver.manage().window().maximize();
+        wwwDriver.get(myUrl);
+        return wwwDriver;
     }
     @Test
     public void verifyLogin() throws MalformedURLException {
