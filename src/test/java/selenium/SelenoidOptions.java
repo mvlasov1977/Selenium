@@ -1,6 +1,8 @@
 package selenium;
 
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
@@ -54,5 +56,19 @@ public class SelenoidOptions {
         options.setCapability("selenoid:options",makeOptions(name, timeout, timezone, isTrashButtonAdd, typeVideoRecording));
         RemoteWebDriver chromeDriver = new RemoteWebDriver(new URL(selenoidURL), options);
         return chromeDriver;
+    }
+    public RemoteWebDriver getFirefoxDriver(String browserVersion, String selenoidURL) throws MalformedURLException {
+        FirefoxOptions options = new FirefoxOptions();
+        options.setCapability("browserVersion", browserVersion);
+        options.setCapability("selenoid:options",makeOptions(name, timeout, timezone, isTrashButtonAdd, typeVideoRecording));
+        RemoteWebDriver firefoxDriver = new RemoteWebDriver(new URL(selenoidURL), options);
+        return firefoxDriver;
+    }
+    public RemoteWebDriver getSafariDriver(String browserVersion, String selenoidURL) throws MalformedURLException {
+        SafariOptions options = new SafariOptions();
+        options.setCapability("browserVersion", browserVersion);
+        options.setCapability("selenoid:options",makeOptions(name, timeout, timezone, isTrashButtonAdd, typeVideoRecording));
+        RemoteWebDriver safariDriver = new RemoteWebDriver(new URL(selenoidURL), options);
+        return safariDriver;
     }
 }

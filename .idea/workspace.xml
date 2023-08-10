@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e96766da-b415-47c2-b694-a81475b9fdc5" name="Changes" comment="set 2 concurrent sessions">
-      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/SelenoidOptions.java" afterDir="false" />
+    <list default="true" id="e96766da-b415-47c2-b694-a81475b9fdc5" name="Changes" comment="selenoid Chrome Option was added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/SelenoidOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/SelenoidOptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/selenium/TestsClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/TestsClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -196,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691641136843</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="selenoid Chrome Option was added">
+      <created>1691646199175</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691646199175</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,6 +224,7 @@
     <MESSAGE value="selenoid configuration was added" />
     <MESSAGE value="change to &quot;enableVNC&quot; option" />
     <MESSAGE value="set 2 concurrent sessions" />
-    <option name="LAST_COMMIT_MESSAGE" value="set 2 concurrent sessions" />
+    <MESSAGE value="selenoid Chrome Option was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="selenoid Chrome Option was added" />
   </component>
 </project>

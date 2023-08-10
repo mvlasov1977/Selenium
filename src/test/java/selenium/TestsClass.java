@@ -30,7 +30,8 @@ public class TestsClass {
         SelenoidOptions mySelenoidOptions = new SelenoidOptions(myStartPageUrl
                 , "1m", "TZ=UTC", "true", "enableVNC");
 
-        WebDriver wwwDriver = mySelenoidOptions.getChromeDriver("114.0", "http://localhost:4444/wd/hub");
+        //WebDriver wwwDriver = mySelenoidOptions.getChromeDriver("114.0", "http://localhost:4444/wd/hub");
+        WebDriver wwwDriver = mySelenoidOptions.getFirefoxDriver("114.0", "http://localhost:4444/wd/hub");
         wwwDriver.manage().deleteAllCookies();
         wwwDriver.manage().window().maximize();
         wwwDriver.get(myUrl);
