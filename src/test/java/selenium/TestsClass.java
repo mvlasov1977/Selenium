@@ -50,7 +50,7 @@ public class TestsClass {
             }});
 
             /* How to enable video recording */
-            put("enableVideo", true);
+            put("enableVNC", true);
         }});
         RemoteWebDriver chromeDriver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
 

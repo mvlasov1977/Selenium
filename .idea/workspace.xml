@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e96766da-b415-47c2-b694-a81475b9fdc5" name="Changes" comment="multi-threads was added">
+    <list default="true" id="e96766da-b415-47c2-b694-a81475b9fdc5" name="Changes" comment="selenoid configuration was added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/selenium/TestsClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/TestsClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
       <recent name="C:\Install\QAAuto\Projects\15\Selenium\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestsClass">
+  <component name="RunManager" selected="JUnit.TestsClass.verifyLogin">
     <configuration name="TestsClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium" />
       <extension name="coverage">
@@ -136,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestsClass.verifyLogin" />
         <item itemvalue="JUnit.TestsClass" />
         <item itemvalue="JUnit.TestsClass.verifyAllProductsShowed" />
         <item itemvalue="JUnit.TestsClass.verifyLogoutCartPage" />
         <item itemvalue="JUnit.TestsClass.verifySelectedProductsShowedInCart" />
-        <item itemvalue="JUnit.TestsClass.verifyLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -174,13 +175,32 @@
       <option name="project" value="LOCAL" />
       <updated>1691519754568</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="selenoid configuration was added">
+      <created>1691600753848</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691600753848</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="environments were created" />
     <MESSAGE value="code was wrote (it needs refactoring)" />
     <MESSAGE value="multi-threads was added" />
-    <option name="LAST_COMMIT_MESSAGE" value="multi-threads was added" />
+    <MESSAGE value="selenoid configuration was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="selenoid configuration was added" />
   </component>
 </project>
